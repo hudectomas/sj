@@ -1,0 +1,19 @@
+<?php
+    include('partials/header.php');
+    include('partials/nav.php');
+  ?>
+<main>
+    <?php
+      include('partials/banner.php');
+      include('partials/quote.php');
+      include('partials/o-nas.php');
+      include('partials/lektori.php');
+      include('partials/kurzy.php');
+      include('partials/referencie.php');
+      include('partials/kontakt.php');
+    ?>
+  </main>
+
+  <?php
+  include('partials/footer.php');
+  ?>
