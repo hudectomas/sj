@@ -35,15 +35,15 @@
 
                     <div class="col-md-offset-1 col-md-4 col-sm-12">
                          <div class="entry-form">
-                              <form action="#" method="post">
+                              <form action="inc/register/insert.php" method="post">
                                    <h2>Signup today</h2>
-                                   <input type="text" name="full name" class="form-control" placeholder="Full name" required="">
+                                   <input type="text" name="user_name" class="form-control" placeholder="Vaše meno" required="">
 
-                                   <input type="email" name="email" class="form-control" placeholder="Your email address" required="">
+                                   <input type="email" name="user_email" class="form-control" placeholder="Váš email" required="">
 
-                                   <input type="password" name="password" class="form-control" placeholder="Your password" required="">
+                                   <input type="password" name="user_password" class="form-control" placeholder="Vaše heslo" required="">
 
-                                   <button class="submit-btn form-control" id="form-submit">Get started</button>
+                                   <button type="submit" class="submit-btn form-control" id="form-submit" name="add_user"> Get started</button>
                               </form>
                               <p>Už máte účet? <br><a href="login.php">Prihláste sa</a></p>
                          </div>

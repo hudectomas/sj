@@ -4,21 +4,21 @@
                <div class="row">
 
                     <div class="col-md-6 col-sm-12">
-                         <form id="contact-form" role="form" action="" method="post">
+                         <form id="contact-form" role="form" action="inc/contact/insert.php" method="post">
                               <div class="section-title">
                                    <h2>Contact us <small>we love conversations. let us talk!</small></h2>
                               </div>
 
                               <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" placeholder="Enter full name" name="name" required="">
+                                   <input type="text" class="form-control" id ="contact_name" placeholder="Celé meno" name="contact_name" required="">
                     
-                                   <input type="email" class="form-control" placeholder="Enter email address" name="email" required="">
+                                   <input type="email" class="form-control" placeholder="Platný email" id="contact_email" name ="contact_email" required="">
 
-                                   <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>
+                                   <textarea class="form-control" rows="6" placeholder="Vaša správa" id="contact_message" name="contact_message" required=""></textarea>
                               </div>
 
                               <div class="col-md-4 col-sm-12">
-                                   <input type="submit" class="form-control" name="send message" value="Send Message">
+                              <button type="submit" class="submit-btn form-control" id="form-submit" name="contact_us"> Get started</button>
                               </div>
 
                          </form>

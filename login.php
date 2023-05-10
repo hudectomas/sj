@@ -12,7 +12,7 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="#" class="navbar-brand">Known</a>
+                    <a href="index.php" class="navbar-brand">Known</a>
                </div>
 
                <!-- MENU LINKS -->

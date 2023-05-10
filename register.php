@@ -12,7 +12,7 @@
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="#" class="navbar-brand">Known</a>
+                    <a href="index.php" class="navbar-brand">Known</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -34,20 +34,19 @@
           </div>
      </section>
   <main>
+  
     <section class="container">
-      <h1>Registrácia</h1>
       <div class="row">
-        <div class="col-100">
-        <form action="inc/register/insert.php" method="post">
-        <input type="text" name="full name" class="form-control" placeholder="Full name" required="">
-
-        <input type="email" name="email" class="form-control" placeholder="Your email address" required="">
-
-        <input type="password" name="password" class="form-control" placeholder="Your password" required="">
-
-        <button class="submit-btn form-control" id="form-submit">Get started</button>
-        </form> <br>
-        <p>Už máte účet? <a href="login.php">Prihláste sa</a></p>
+      <div class="col-100">  
+          <h1>Registrácia</h1>
+          <form action="inc/register/insert.php" method="post">
+            <input type="text" name="user_name" placeholder="Vaše meno"><br>
+            <input type="email" name="user_email" placeholder="Váš email"><br>
+            <input type="password" name="user_password" placeholder="Vaše heslo"><br>
+            <input type="submit" value="Zaregistrovať sa" name="add_user">
+          </form>
+          <br>
+          <p>Máte účet? <a href="login.php">Prihláste sa</a></p>
         </div>
       </div>
     </section>
