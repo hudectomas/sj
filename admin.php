@@ -42,34 +42,18 @@
         ?>
     </section>
     <section>
-        <h2>Qna</h2>
-        <form action="inc/qna/insert.php" method="post">
-            <input type="text" name="question" placeholder="Názov otázky">
-            <input type="text" name="answer"placeholder="Názov odpovede">
+        <h2>Newsletter</h2>
+        <?php $qna = $Qna->get_qna(); ?>
+        <form action="inc/newsletter/insert.php" method="post">
+            <input type="email" name="email" id="email" placeholder="Email">
             <input type="submit" value="Pridať" name="add_qna">
         </form>
         <?php
             $qna = $Qna->get_qna();
-            
             echo '<table class="admin-table">';
                 foreach($qna as $q){
                     echo '<tr>';
-                    echo '<td>'.$q->question;'</td>';
-                    echo '<td>'.$q->answer;'</td>';
-                    echo '<td>
-                            <form action="inc/qna/delete.php" method="post">
-                                <button type = "submit" name="delete_qna" value="'.$q->id.'"'.'>Vymazať</button>
-                            </form>';
-                    echo '</tr>';
-                    echo '<tr>';
-                    echo '<td colspan="4">
-                            <form action="inc/qna/update.php" method="post">
-                                <input type="hidden" name="form_id" value="'.$q->id.'"'.'>
-                                <input type ="text" name="update_question" placeholder="Text otázky"><br>
-                                <input type ="text" name="update_answer" placeholder = "Text odpovede"><br>
-                                <input type ="submit" name="update_qna" value="Zmeň text">
-                            </form>
-                        </td>'; 
+                    echo '<td>'.$q->email;'</td>';
                     echo '</tr>';
                 }
                 echo '</table>';

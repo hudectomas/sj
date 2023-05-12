@@ -6,7 +6,7 @@
                     <div class="col-md-6 col-sm-12">
                          <form id="contact-form" role="form" action="inc/contact/insert.php" method="post">
                               <div class="section-title">
-                                   <h2>Contact us <small>we love conversations. let us talk!</small></h2>
+                                   <h2>Kontaktujte nás, <small>radi Vám pomôžeme...</small></h2>
                               </div>
 
                               <div class="col-md-12 col-sm-12">
@@ -18,7 +18,7 @@
                               </div>
 
                               <div class="col-md-4 col-sm-12">
-                              <button type="submit" class="submit-btn form-control" id="form-submit" name="contact_us"> Get started</button>
+                              <button type="submit" class="submit-btn form-control" id="form-submit" name="contact_us"> Odoslať</button>
                               </div>
 
                          </form>

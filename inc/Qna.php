@@ -9,7 +9,7 @@
 
         function get_qna(){
             try{
-                $query =  $this->db->conn->query("SELECT * FROM qna");
+                $query =  $this->db->conn->query("SELECT * FROM newsletter");
                 $qna = $query->fetchAll(PDO::FETCH_OBJ);
                 return $qna;
               }catch(PDOException $e){

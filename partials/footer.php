@@ -6,10 +6,10 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-info">
                               <div class="section-title">
-                                   <h2>Headquarter</h2>
+                                   <h2>Sídlo spoločnosti:</h2>
                               </div>
                               <address>
-                                   <p>1800 dapibus a tortor pretium,<br> Integer nisl dui, ABC 12000</p>
+                                   <p>Vymyslené námestie 1,<br> 94900 Bratislava</p>
                               </address>
 
                               <ul class="social-icon">
@@ -19,7 +19,7 @@
                               </ul>
 
                               <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2019 Company Name</p>
+                                   <p>Copyright &copy; 2023 Knows</p>
                                    
                                    <p>Design: TemplateMo</p>
                               </div>
@@ -29,7 +29,7 @@
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-info">
                               <div class="section-title">
-                                   <h2>Contact Info</h2>
+                                   <h2>Kontaktné informácie</h2>
                               </div>
                               <address>
                                    <p>+65 2244 1100, +66 1800 1100</p>
@@ -55,7 +55,7 @@
                               </div>
                               <div>
                                    <div class="form-group">
-                                        <form action="#" method="get">
+                                        <form action="/m/inc/newsletter/insert.php" method="post">
                                              <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required="">
                                              <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
                                         </form>
