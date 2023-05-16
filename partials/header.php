@@ -1,9 +1,9 @@
-
+<?php require_once('inc/functions.php')?>; 
 <!DOCTYPE html>
 <html lang="sk">
 <head>
 
-     <title>Known - Education HTML Template</title>
+     <title>Known s.r.o.</title>
 <!-- 
 
 Known Template 

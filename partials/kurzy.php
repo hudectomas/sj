@@ -5,7 +5,7 @@
 
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title">
-                              <h2>Popular Courses <small>Kurzy, ktoré ponúkame</small></h2>
+                              <h2>Aktuálna ponuka kurzov <small>najbližšie kurzy:</small></h2>
                          </div>
 
                          <div class="owl-carousel owl-theme owl-courses">

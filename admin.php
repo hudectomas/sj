@@ -6,7 +6,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <?php
     include('partials/header.php');
     include('partials/nav.php');
@@ -18,23 +18,23 @@
         <a href="inc/login/logout.php">Odhlásiť sa</a>
     </section>
     <section>
-        <h2>Portfólio</h2>
-        <?php $portfolio = $Portfolio->get_portfolio(); ?>
-        <form action="inc/portfolio/insert.php" method="post">
-            <input type="text" name="name" id="name" placeholder="Názov portfólia">
+        <h2>Lektori</h2>
+        <?php $teachers = $Teachers->get_teachers(); ?>
+        <form action="inc/teachers/insert.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Meno">
             <input type="text" name="image" id="image" placeholder="Cesta k obrázku">
-            <input type="submit" value="Pridať" name="add_portfolio">
+            <input type="submit" value="Pridať" name="add_teachers">
         </form>
         <?php
-            $portfolio = $Portfolio->get_portfolio();
+            $teachers = $Teachers->get_teachers();
             echo '<table class="admin-table">';
-                foreach($portfolio as $p){
+                foreach($teachers as $p){
                     echo '<tr>';
                     echo '<td>'.$p->name;'</td>';
                     echo '<td>'.'<img width="150" src = "'.$p->image.'">';
                     echo '<td>
-                            <form action="inc/portfolio//delete.php" method="post">
-                                <button type = "submit" name="delete_portfolio" value="'.$p->id.'"'.'>Vymazať</button>
+                            <form action="inc/teachers//delete.php" method="post">
+                                <button type = "submit" name="delete_teachers" value="'.$p->id.'"'.'>Vymazať</button>
                             </form>';
                     echo '</tr>';
                 }
@@ -62,51 +62,27 @@
     <section>
         <h2>Správy z kontaktného formulára</h2>
         <?php
-
-$i=0;
-if($_SERVER['REQUEST_METHOD']=="GET"){
-$localhost = "localhost";
-$usernamew = "root";
-$passwordw = "";
-$db = "web";
-$conn = mysqli_connect($localhost,$usernamew,$passwordw,$db);
-if(!$conn){
-echo "Connection error";
-}
-else{
-echo "";
-$sql = "Select * from contact order by contact_name asc";
-$result = mysqli_query($conn,$sql);
-echo "<table class='cont-head'>";
+            $contact = $Contact->get_contact();
+            echo "<table class='cont-head'>";
 echo "<tr >";
 echo "<td>P.c.</td><td>Meno</td><td>Email</td><td>Sprava</td>"; 
 echo "</td>";
 echo "</tr>";
 echo "</table><hr>";
 echo "<table class='cont table table-hover table-dark'>";
-if (mysqli_num_rows($result) > 0) {
-while($row = mysqli_fetch_assoc($result)){
-    $i++;
-echo "<tr >";
-
-echo  "<td >".$i."</td>"."<td>".$row["contact_name"]."</td><td>".$row["contact_email"]."</td><td>".$row["contact_message"]."</td><td><button >Delete</button>";
-echo "</td>";
-echo "</tr>";
-
-
-}
-echo "</table>";
-
-
-
-}
-else{
-
-echo "0 results";
-}
-}
-}
-?>
+                foreach($contact as $c){
+                    echo '<tr>';
+                    echo '<td>'.$c->contact_name;'</td>';
+                    echo '<td>'.$c->contact_email;'</td>';
+                    echo '<td>'.$c->contact_message;'</td>';
+                    echo '<td>
+                            <form action="inc/contact/delete.php" method="post">
+                                <button type = "submit" name="delete_contact" value="'.$c->id.'"'.'>Vymazať</button>
+                            </form></td>';
+                    echo '</tr>';
+                }
+                echo '</table>';
+        ?>
     </section>
     <?php
     include('partials/footer.php');?>

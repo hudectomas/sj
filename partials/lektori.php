@@ -1,7 +1,7 @@
 <?php
 require_once('partials/header.php');
 require_once('partials/nav.php');
-require_once('inc/Portfolio.php');
+require_once('inc/Teachers.php');
 ?>
 <!-- TEAM -->
 <section id="team">
@@ -16,9 +16,8 @@ require_once('inc/Portfolio.php');
 
             <?php
             require_once('partials/banner.php');
-            require_once('partials/quote.php');
-            $portfolio = $Portfolio->get_portfolio();
-            foreach ($portfolio as $id => $content) {
+            $teachers = $Teachers->get_teachers();
+            foreach ($teachers as $id => $content) {
                 $cesta = "/m/" . $content->image;
             ?>
             <div class="col-md-3 col-sm-6">

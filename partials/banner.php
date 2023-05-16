@@ -7,9 +7,9 @@
                               <div class="caption">
                                    <div class="container">
                                         <div class="col-md-6 col-sm-12">
-                                             <h1>Distance Learning Education Center</h1>
-                                             <h3>Our online courses are designed to fit in your industry supporting all-round with latest technologies.</h3>
-                                             <a href="#feature" class="section-btn btn btn-default smoothScroll">Discover more</a>
+                                             <h1>Vybrané kurzy učíme aj online</h1>
+                                             <h3>Naše online kurzy sú nastavené tak, aby vyhovovali ľudom, ktorí sa osobne na kurz dostaviť nemôžu.</h3>
+                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Zistite viac</a>
                                         </div>
                                    </div>
                               </div>
@@ -19,9 +19,9 @@
                               <div class="caption">
                                    <div class="container">
                                         <div class="col-md-6 col-sm-12">
-                                             <h1>Start your journey with our practical courses</h1>
-                                             <h3>Our online courses are built in partnership with technology leaders and are designed to meet industry demands.</h3>
-                                             <a href="#courses" class="section-btn btn btn-default smoothScroll">Take a course</a>
+                                             <h1>Začnite u nás so špičkovými kurzami.</h1>
+                                             <h3>Sme oprávnená vzdelávacia organizácia, ktorá má najširšiu ponuku kurzov na Slovensku.</h3>
+                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Prihlásiť sa na kurz</a>
                                         </div>
                                    </div>
                               </div>
@@ -31,9 +31,9 @@
                               <div class="caption">
                                    <div class="container">
                                         <div class="col-md-6 col-sm-12">
-                                             <h1>Efficient Learning Methods</h1>
-                                             <h3>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna venenatis sollicitudin ut at libero. Visit <a rel="nofollow" href="https://www.facebook.com/templatemo">templatemo</a> page.</h3>
-                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Let's chat</a>
+                                             <h1>Effektívne školiace metódy</h1>
+                                             <h3>Naši profesionály lektori vedia ako na to.. Dôkazom toho je aj ich dlhoročná prax v školstve a na Ministerstve školstva.</h3>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Zistite viac o našich lektoroch</a>
                                         </div>
                                    </div>
                               </div>

@@ -37,12 +37,12 @@
                               </address>
 
                               <div class="footer_menu">
-                                   <h2>Quick Links</h2>
+                                   <h2>Užitočné odkazy</h2>
                                    <ul>
-                                        <li><a href="#">Career</a></li>
-                                        <li><a href="#">Investor</a></li>
-                                        <li><a href="#">Terms & Conditions</a></li>
-                                        <li><a href="#">Refund Policy</a></li>
+                                        <li><a href="https://www.ukf.sk/">UKF</a></li>
+                                        <li><a href="https://www.google.com/">Google</a></li>
+                                        <li><a href="https://priscilla.fitped.eu/login">Priscilla</a></li>
+                                        <li><a href="https://studentmail.ukf.sk/webmail/">Webmail pre študentov</a></li>
                                    </ul>
                               </div>
                          </div>
@@ -51,15 +51,15 @@
                     <div class="col-md-4 col-sm-12">
                          <div class="footer-info newsletter-form">
                               <div class="section-title">
-                                   <h2>Newsletter Signup</h2>
+                                   <h2>Odoberanie Newsletter</h2>
                               </div>
                               <div>
                                    <div class="form-group">
                                         <form action="/m/inc/newsletter/insert.php" method="post">
-                                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required="">
-                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                             <input type="email" class="form-control" placeholder="Váš email" name="email" id="email" required="">
+                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Odoslať">
                                         </form>
-                                        <span><sup>*</sup> Please note - we do not spam your email.</span>
+                                        <span><sup>*</sup> Pamätajte, že my nespamujeme Vašu emailovú schránku!</span>
                                    </div>
                               </div>
                          </div>
