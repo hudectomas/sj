@@ -33,8 +33,22 @@
                     echo '<td>'.$p->name;'</td>';
                     echo '<td>'.'<img width="150" src = "'.$p->image.'">';
                     echo '<td>
-                            <form action="inc/teachers//delete.php" method="post">
+                            <form action="inc/teachers/delete.php" method="post">
                                 <button type = "submit" name="delete_teachers" value="'.$p->id.'"'.'>Vymazať</button>
+                            </form>';
+                    echo '</tr>';
+                    echo '<td>
+                            <form action="inc/teachers/rename.php" method="post">
+                                <input type="hidden" name="teacher_id" value="' . $p->id . '">
+                                <input type="text" name="name" id="name" placeholder="Meno">
+                                <input type="submit">Zmen meno</button>
+                            </form>';
+                    echo '</tr>';
+                    echo '<td>
+                            <form action="inc/teachers/set_image.php" method="post">
+                                <input type="hidden" name="teacher_id" value="' . $p->id . '">
+                                <input type="text" name="image" id="image" placeholder="Cesta...">
+                                <input type="submit">Zmen obrazok</button>
                             </form>';
                     echo '</tr>';
                 }
